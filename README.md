@@ -9,7 +9,7 @@
 - **Lydia**: Interview 생성 기능
 - **Kai**: TIL(Today I Learned) 자동 작성 기능, 테크 news 요약 기능
 
-각 모듈은 `dev/interview`, `dev/til` 브랜치에서 개발되며, 이 문서는 협업을 위한 Git 규칙, 이슈 관리, 커밋 메시지 작성, PR 절차를 명시합니다.
+각 모듈은 `feature/lydia/interview`, `feature/kai/til`, `feature/kai/news` 브랜치에서 개발되며, 이 문서는 협업을 위한 Git 규칙, 이슈 관리, 커밋 메시지 작성, PR 절차를 명시합니다.
 
 ---
 
@@ -17,10 +17,8 @@
 
 - `main`: 운영 및 배포용 브랜치 (직접 push 금지)
 - `dev`: 기능 통합 개발 브랜치
-- `dev/interview`: Lydia 인터뷰 기능 개발 브랜치
-- `dev/til`: Kai TIL 기능 개발 브랜치
-- `feature/{lydia|kai}/이슈번호-작업명`: 기능 개발 브랜치
-- `bugfix/{lydia|kai}/이슈번호-수정내용`: 버그 수정 브랜치
+- `feature/{lydia|kai}/작업명`: 기능 개발 브랜치
+- `bugfix/{lydia|kai}/수정내용`: 버그 수정 브랜치
 
 > 예시:
 > - `feature/lydia/23-interview-generator`
@@ -32,13 +30,12 @@
 
 1. **이슈 등록**
    - GitHub Issue 생성 후 브랜치 작업 시작
-   - 모듈(interview/til) 라벨 지정
+   - 모듈(interview/til/news) 라벨 지정
 2. **브랜치 생성**
    - 규칙에 맞는 브랜치명 사용
 3. **작업 및 커밋**
    - 커밋 메시지 규칙 준수
 4. **PR(Pull Request) 생성 및 리뷰**
-   - `dev/interview` 또는 `dev/til`로 PR 요청
    - 최소 1명 이상의 코드 리뷰 승인 후 병합
 
 ---
