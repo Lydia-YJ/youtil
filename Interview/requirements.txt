@@ -5,4 +5,8 @@ langgraph
 langchain
 vllm
 transformers
+sentence-transformers
 torch
+qdrant-client
+wikipedia
+
